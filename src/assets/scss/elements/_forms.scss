@@ -1,0 +1,27 @@
+///////////////////////
+// Form items
+//////////////////////
+
+
+[type='text'],
+[type='password'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='month'],
+[type='week'],
+[type='email'],
+[type='number'],
+[type='search'],
+[type='tel'],
+[type='time'],
+[type='url'],
+[type='color'],
+textarea {
+  border-width: 0 0 1px 0;
+
+  &:focus {
+    border-width: 0 0 1px 0;
+    box-shadow: 0 0 0 transparent;
+  }
+}

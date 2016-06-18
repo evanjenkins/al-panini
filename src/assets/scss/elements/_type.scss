@@ -1,0 +1,12 @@
+///////////////////////////
+// Type styles
+///////////////////////////
+
+.logo-img {
+  margin: 0;
+  line-height: 2;
+
+  @include breakpoint(medium up) {
+    line-height: 1.2;
+  }
+}

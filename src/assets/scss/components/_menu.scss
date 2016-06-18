@@ -1,0 +1,227 @@
+//////////////////////////////
+// Menu theme
+//////////////////////////////
+$hamburger-button-height: rem-calc(50);
+$hamburger-button-width: rem-calc(60);
+$hamburger-button-height-lg: rem-calc(70);
+$hamburger-button-width-lg: rem-calc(80);
+$hamburger-width: rem-calc(30);
+$hamburger-height: rem-calc(20);
+$hamburger-line-height: rem-calc(4);
+
+.top-bar-left {
+  padding-left: rem-calc(20);
+}
+
+.top-bar {
+  background: transparent;
+  transition: all .2s ease;
+
+  .logo-img,
+  button {
+    transition: all .2s ease;
+  }
+
+  &.sticky {
+    z-index: 10;
+  }
+
+  &.is-stuck {
+    background: $white;
+
+    @include breakpoint(medium up) {
+
+      .logo-img {
+        padding-right: rem-calc(30);
+      }
+
+      button {
+        height: $hamburger-button-height;
+        width: $hamburger-button-width;
+      }
+    }
+  }
+
+
+  a {
+    color: $dark-gray;
+    font-family: $header-font-family;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all .2s ease;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  .menu > li {
+    > a {
+      @include breakpoint(medium up) {
+        padding-left: rem-calc(30);
+        padding-right: rem-calc(30);
+      }
+    }
+  }
+
+  .top-bar-right {
+    width: auto;
+  }
+
+  .top-bar-left {
+    width: auto;
+  }
+}
+
+.top-bar--search {
+  background: white;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+
+  fieldset {
+    margin: 0 auto;
+    max-width: $global-width;
+    position: relative;
+  }
+
+  input {
+    height: $hamburger-button-height;
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+
+    @include breakpoint(medium up) {
+      font-size: rem-calc(30);
+      height: $hamburger-button-height-lg;
+    }
+  }
+
+  .top-bar--search-go {
+    @include center('y');
+    right: $hamburger-button-width + rem-calc(20);
+
+    @include breakpoint(medium up) {
+      right: $hamburger-button-width-lg + rem-calc(20);
+    }
+
+    @include breakpoint(xlarge up) {
+      right: rem-calc(20);
+    }
+
+    @media screen and (min-width: rem-calc(1024)) and (max-width: rem-calc(1575)) {
+      right: $hamburger-button-width-lg + rem-calc(20);
+    }
+
+  }
+
+  .fa-search {
+
+    i {
+      @include breakpoint(medium up) {
+        font-size: rem-calc(50);
+      }
+    }
+  }
+}
+
+
+.hamburger.hamburger--spring {
+  background-color: $primary-color;
+  display: block;
+  height: $hamburger-button-height;
+  position: relative;
+  width: $hamburger-button-width;
+  z-index: 15;
+
+  @include breakpoint(medium up) {
+    height: $hamburger-button-height-lg;
+    width: $hamburger-button-width-lg;
+  }
+}
+
+#hide-goo {
+  display: none;
+}
+
+// Hamburger
+.hamburger-box {
+  display: inline-block;
+  height: $hamburger-height;
+  position: relative;
+  transform: scale3d(1, 1, 1);
+  vertical-align: middle;
+  width: $hamburger-width;
+}
+
+.hamburger-inner,
+.hamburger-inner:before,
+.hamburger-inner:after{
+  background: $white;
+  height: $hamburger-line-height;
+  position: absolute;
+  transition: background .3s, transform .3s, top .3s;
+  transform-origin: 50% 50%;
+  width: rem-calc(24);
+}
+
+.hamburger-inner {
+  left: 0;
+  top: rem-calc(8);
+}
+
+.hamburger-inner:before {
+  content: '';
+  left: 0;
+  top: rem-calc(-8);
+}
+
+.hamburger-inner:after {
+  content: '';
+  left: 0;
+  top: rem-calc(8);
+}
+
+.showing-toggle.transitioning {
+
+  .hamburger-box {
+    //filter: url(#goo);
+  }
+
+  .hamburger-inner {
+    //background: transparent;
+    animation-name: middleShrink;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+}
+
+.showing-toggle .hamburger-inner {
+  background: transparent;
+}
+
+.showing-toggle .hamburger-inner:before {
+  top: 0;
+  transform: rotate3d(0, 0, 1, -135deg);
+}
+
+.showing-toggle .hamburger-inner:after {
+  top: 0;
+  transform: rotate3d(0, 0, 1, 135deg);
+}
+
+.search-form--on {
+
+  .search-form--background {
+    background-color: rgba(255, 255, 255, .8);
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+  }
+}
