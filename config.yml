@@ -59,3 +59,5 @@ PATHS:
     # Paths to your own project code are here
     - "src/assets/js/!(app).js"
     - "src/assets/js/app.js"
+  javascript_copy:
+    - "bower_components/inline-svg/dist/inlineSVG.min.js"

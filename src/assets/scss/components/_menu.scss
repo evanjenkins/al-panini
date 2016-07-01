@@ -10,7 +10,7 @@ $hamburger-height: rem-calc(20);
 $hamburger-line-height: rem-calc(4);
 
 .top-bar-left {
-  padding-left: rem-calc(20);
+  padding-left: rem-calc(40);
 }
 
 .top-bar {
@@ -44,7 +44,7 @@ $hamburger-line-height: rem-calc(4);
 
 
   a {
-    color: $dark-gray;
+    color: $white;
     font-family: $header-font-family;
     font-weight: bold;
     text-transform: uppercase;
@@ -66,10 +66,14 @@ $hamburger-line-height: rem-calc(4);
 
   .top-bar-right {
     width: auto;
+    position: relative;
+    z-index: 20;
   }
 
   .top-bar-left {
     width: auto;
+    position: relative;
+    z-index: 20;
   }
 }
 
@@ -224,4 +228,8 @@ $hamburger-line-height: rem-calc(4);
     width: 100%;
     z-index: 5;
   }
+}
+
+.position-right.is-open {
+  z-index:1;
 }

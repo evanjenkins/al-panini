@@ -10,79 +10,70 @@
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
   </head>
   <body>
-    <svg id="hide-goo" xmlns="http://www.w3.org/2000/svg" version="1.1">
-      <defs>
-        <filter id="goo">
-          <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur"></feGaussianBlur>
-          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
-          <feComposite in="SourceGraphic" in2="goo" operator="atop"></feComposite>
-        </filter>
-      </defs>
-    </svg>
-    <div class="off-canvas-wrapper">
-      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+  <div class="off-canvas-wrapper">
+    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 
-        <div class="off-canvas position-right" id="offCanvas" data-off-canvas data-position="right">
+      <div class="off-canvas position-right" id="offCanvas" data-off-canvas data-position="right">
 
-          <!-- Close button -->
-          <button class="close-button" aria-label="Close menu" type="button" data-close>
-            <span aria-hidden="true">&times;</span>
-          </button>
+        <!-- Menu -->
+        <ul class="vertical menu">
+          <li><a href="#">Home</a></li>
+          <li class="hide-for-large"><a href="#">Our Work</a></li>
+          <li class="hide-for-large"><a href="#">What We Do</a></li>
+          <li class="hide-for-large"><a href="#">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Videos</a></li>
+          <li><a href="#">Who We Are</a></li>
+        </ul>
 
-          <!-- Menu -->
-          <ul class="vertical menu">
-            <li><a href="#">Foundation</a></li>
-            <li><a href="#">Dot</a></li>
-            <li><a href="#">ZURB</a></li>
-            <li><a href="#">Com</a></li>
-            <li><a href="#">Slash</a></li>
-            <li><a href="#">Sites</a></li>
-          </ul>
+      </div>
 
-        </div>
+      <div class="off-canvas-content" data-off-canvas-content>
 
-        <div class="off-canvas-content" data-off-canvas-content>
-          <div data-sticky-container>
-            <div class="top-bar" data-sticky data-options="marginTop:0;" style="width:100%">
-              <div class="top-bar-left">
-                <h1 class="logo-img">
-                  <a href="/">
-                    <img src="../assets/img/activelamp-logo.svg" alt="ActiveLAMP"/>
-                  </a>
-                </h1>
-              </div>
-              <div class="top-bar-right">
-                <ul class="menu">
-                  <li class="show-for-large"><a href="#">About Us</a></li>
-                  <li class="show-for-large"><a href="#">Blog</a></li>
-                  <li class="show-for-large"><a href="#">Careers</a></li>
-                  <li><a href="#" class="search-toggle search-toggle--closed"><i class="fa fa-search"></i></a></li>
-                  <li>
-                    <button id="menu-more" class="hamburger hamburger--spring" type="button" style="-webkit-user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); touch-action: pan-y;">
-                      <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                      </span>
-                    </button>
-                  </li>
-                </ul>
-              </div>
-              <form action="/" method="get" id="searchForm" class="top-bar--search">
-                <fieldset>
-                  <input type="text" id="search_term" name="keywords" placeholder="Search ActiveLAMP.com" class="clearClick">
-                  <div id="search_go" class="top-bar--search-go">
-                    <a href="#" class=""><i class="fa fa-2x fa-arrow-circle-right"></i></a>
-                  </div>
-                </fieldset>
-              </form>
-            </div>
+        <div class="top-bar">
+          <div class="top-bar-left">
+            <h1 class="logo-img">
+              <a href="/">
+                <img src="{{root}}assets/img/activelamp-logo.svg" class="svg" alt="ActiveLAMP" />
+              </a>
+            </h1>
           </div>
+          <div class="top-bar-right">
+            <ul class="menu">
+              <li class="show-for-large"><a href="#">Our Work</a></li>
+              <li class="show-for-large"><a href="#">What We Do</a></li>
+              <li class="show-for-large"><a href="#">Contact</a></li>
+              <li><a href="#" class="search-toggle search-toggle--closed"><i class="fa fa-search"></i></a></li>
+              <li>
+                <button id="menu-more" class="hamburger hamburger--spring" data-toggle="OffCanvas" type="button" style="-webkit-user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); touch-action: pan-y;">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <form action="/" method="get" id="searchForm" class="top-bar--search">
+            <fieldset>
+              <input type="text" id="search_term" name="keywords" placeholder="Search ActiveLAMP.com" class="clearClick">
+              <div id="search_go" class="top-bar--search-go">
+                <a href="#" class=""><i class="fa fa-2x fa-arrow-circle-right"></i></a>
+              </div>
+            </fieldset>
+          </form>
           {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
           {{> body}}
         </div>
 
       </div>
+
     </div>
+
+  </div>
+
+
     <div class="search-form--background"></div>
+    <script src="{{root}}assets/js/inlineSVG.min.js"></script>
     <script src="{{root}}assets/js/app.js"></script>
   </body>
 </html>

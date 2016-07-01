@@ -18,7 +18,8 @@
     "foundation-sites": "~6.2.0",
     "motion-ui": "~1.2.2",
     "fontawesome": "~4.6.2",
-    "gsap": "1.18.5"
+    "gsap": "1.18.5",
+    "inline-svg": "2.2.1"
   },
   "private": true
 }

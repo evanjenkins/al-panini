@@ -1,0 +1,27 @@
+///////////////////////////
+// Logo styles
+///////////////////////////
+
+@mixin site-logo($scheme, $height: 50px, $width: 100px) {
+  $al-normal: $black;
+  $al-bold: $primary-color;
+
+  @if ($scheme == "white") {
+    $al-normal: $white;
+    $al-bold: $white;
+  }
+  @else if ($scheme == "on dark") {
+    $al-normal: $white;
+    $al-bold: $primary-color;
+  }
+
+  svg {
+    height: $height;
+    width: $width;
+
+    .al-normal { fill: $al-normal };
+    .al-bold { fill: $al-bold };
+  }
+
+}
+

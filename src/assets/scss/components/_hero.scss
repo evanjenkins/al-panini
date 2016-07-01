@@ -1,0 +1,46 @@
+.hero {
+  background: none;
+  position: relative;
+  top: -86px;
+  z-index: 0;
+  width: 100%;
+  overflow: hidden;
+
+  .inside {
+    padding: 250px 0;
+    color: $white;
+  }
+
+  .play {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    padding-top: 60px;
+    i {
+      padding: 10px;
+      font-size: 3rem;
+      display: block;
+    }
+
+  }
+
+  .backstretch {
+    position: fixed;
+    top: 0;
+    left: -50%;
+    width: 200%;
+    height: 600px;
+    z-index: -9999;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      min-width: 50%;
+      min-height: 50%;
+    }
+  }
+}
