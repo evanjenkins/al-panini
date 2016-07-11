@@ -28,42 +28,73 @@
 
       </div>
 
-      <div class="off-canvas-content" data-off-canvas-content>
+      <div class="off-canvas-content main-content" data-off-canvas-content>
+        <header data-sticky-container>
+          <div class="top-bar header header--airy sticky" data-sticky data-options="marginTop:0">
+            <div class="top-bar-left">
+              <h1 class="logo-img">
+                <a href="/">
+                  <img src="{{root}}assets/img/activelamp-logo.svg" class="svg" alt="ActiveLAMP" />
+                </a>
+              </h1>
+            </div>
+            <div class="top-bar-right">
+              <ul class="menu">
+                <li class="show-for-large"><a href="#">Our Work</a></li>
+                <li class="show-for-large"><a href="#">What We Do</a></li>
+                <li class="show-for-large"><a href="#">Contact</a></li>
+                <li><a href="#" class="search-toggle search-toggle--closed"><i class="fa fa-search"></i></a></li>
+                <li>
+                  <button id="menu-more" class="hamburger hamburger--spring" data-toggle="OffCanvas" type="button" style="-webkit-user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); touch-action: pan-y;">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <form action="/" method="get" id="searchForm" class="top-bar--search">
+              <fieldset>
+                <input type="text" id="search_term" name="keywords" placeholder="Search ActiveLAMP.com" class="clearClick">
+                <div id="search_go" class="top-bar--search-go">
+                  <a href="#" class=""><i class="fa fa-2x fa-arrow-circle-right"></i></a>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </header>
 
-        <div class="top-bar">
-          <div class="top-bar-left">
-            <h1 class="logo-img">
+        {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+        {{> body}}
+
+        <footer>
+          <div class="row full-width align-justify">
+            <div class="large-3 columns logo-img">
               <a href="/">
-                <img src="{{root}}assets/img/activelamp-logo.svg" class="svg" alt="ActiveLAMP" />
+                <img src="{{root}}assets/img/activelamp-logo.svg" class="svg activelamp-logo no-wordmark" alt="ActiveLAMP" />
               </a>
-            </h1>
+              <p>
+                12180 Ridgecrest Rd #106<br />
+                Victorville, CA 92395<br />
+                310.943.0246
+              </p>
+            </div>
+            <div class="large-3 large-offset-3 column">
+              <ul>
+                <li>Menu Item</li>
+                <li>Menu Item</li>
+                <li>Menu Item</li>
+                <li>Menu Item</li>
+                <li>Menu Item</li>
+              </ul>
+            </div>
           </div>
-          <div class="top-bar-right">
-            <ul class="menu">
-              <li class="show-for-large"><a href="#">Our Work</a></li>
-              <li class="show-for-large"><a href="#">What We Do</a></li>
-              <li class="show-for-large"><a href="#">Contact</a></li>
-              <li><a href="#" class="search-toggle search-toggle--closed"><i class="fa fa-search"></i></a></li>
-              <li>
-                <button id="menu-more" class="hamburger hamburger--spring" data-toggle="OffCanvas" type="button" style="-webkit-user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); touch-action: pan-y;">
-              <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-              </span>
-                </button>
-              </li>
-            </ul>
+          <div class="row full-width">
+            <div class="large-12 column">
+              <p class="copyright">2016 ActiveLAMP, All rights reserved.</p>
+            </div>
           </div>
-          <form action="/" method="get" id="searchForm" class="top-bar--search">
-            <fieldset>
-              <input type="text" id="search_term" name="keywords" placeholder="Search ActiveLAMP.com" class="clearClick">
-              <div id="search_go" class="top-bar--search-go">
-                <a href="#" class=""><i class="fa fa-2x fa-arrow-circle-right"></i></a>
-              </div>
-            </fieldset>
-          </form>
-          {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
-          {{> body}}
-        </div>
+        </footer>
 
       </div>
 
@@ -71,9 +102,8 @@
 
   </div>
 
-
-    <div class="search-form--background"></div>
-    <script src="{{root}}assets/js/inlineSVG.min.js"></script>
-    <script src="{{root}}assets/js/app.js"></script>
+  <div class="search-form--background"></div>
+  <script src="{{root}}assets/js/inlineSVG.min.js"></script>
+  <script src="{{root}}assets/js/app.js"></script>
   </body>
 </html>

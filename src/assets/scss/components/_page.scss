@@ -1,0 +1,65 @@
+$header-height: 76px; /** This is the height foundation is setting for sticky header */
+
+.header {
+  width: 100%;
+  padding: 30px 60px;
+
+  #menu-more {
+    border-radius: 10px;
+  }
+
+  &.is-stuck {
+    padding: 0;
+
+    #menu-more {
+      border-radius: 0;
+      height: $header-height;
+    }
+    .al-normal {
+      fill: $black;
+    }
+    .al-bold {
+      fill: $primary-color;
+    }
+
+    a {
+      color: $black;
+    }
+
+    .top-bar-right {
+      height: $header-height;
+      ul {
+        li {
+          padding: 13px 0;
+        }
+        li:last-child {
+          padding: 0;
+        }
+      }
+    }
+
+  }
+}
+
+.stuck-header {
+  padding-top: $header-height;
+}
+
+
+.main-content > footer {
+  background-color: $dark-gray;
+
+  .logo-img {
+    p {
+      margin-left: 180px;
+      margin-top: 10px;
+    }
+  }
+  .activelamp-logo {
+    float: left;
+  }
+  .copyright {
+    margin-left: 60px;
+  }
+}
+

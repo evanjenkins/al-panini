@@ -1,0 +1,20 @@
+- case_study_1:
+  title: Some Title 1
+  nutgraf: Morbi ex enim, rhoncus iaculis dignissim ac, laoreet in nisl. Ut rutrum lobortis est at malesuada. Curabitur sed risus lectus. Suspendisse in elementum orci.
+  img: /assets/img/our-work/mockup-1.png
+- case_study_2:
+  title: Some Title 1
+  nutgraf: Morbi ex enim, rhoncus iaculis dignissim ac, laoreet in nisl. Ut rutrum lobortis est at malesuada. Curabitur sed risus lectus. Suspendisse in elementum orci.
+  img: /assets/img/our-work/mockup-1.png
+  class: large-order-2
+  class2: large-order-1
+- case_study_3:
+  title: Some Title 3
+  nutgraf: Morbi ex enim, rhoncus iaculis dignissim ac, laoreet in nisl. Ut rutrum lobortis est at malesuada. Curabitur sed risus lectus. Suspendisse in elementum orci.
+  img: /assets/img/our-work/mockup-1.png
+- case_study_4:
+  title: Some Title 4
+  nutgraf: Morbi ex enim, rhoncus iaculis dignissim ac, laoreet in nisl. Ut rutrum lobortis est at malesuada. Curabitur sed risus lectus. Suspendisse in elementum orci.
+  img: /assets/img/our-work/mockup-1.png
+  class: large-order-2
+  class2: large-order-1

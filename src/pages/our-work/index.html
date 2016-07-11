@@ -11,6 +11,141 @@
     </div>
 
     <div class="backstretch">
-        <img src="{{ root }}assets/img/wallpapers/latest-features@2x.jpg" />
+        <img src="{{root}}assets/img/wallpapers/latest-features@2x.jpg" />
+    </div>
+</section>
+
+<section class="case-studies">
+    {{#each case_study}}
+    <div class="row">
+        <div class="large-6 {{this.class}}">
+            <h2>{{this.title}}</h2>
+            <p>{{this.nutgraf}}</p>
+        </div>
+        <div class="large-6 {{this.class2}}">
+            <img src="{{this.img}}" alt="">
+        </div>
+    </div>
+    {{/each}}
+</section>
+
+<section class="logos">
+    <div class="row">
+        <h5 class="column">
+            Some of the clients we have worked with.
+        </h5>
+    </div>
+    <div class="row">
+        {{#each logo}}
+        <div class="columns">
+            <img src="{{this.img}}" alt="{{this.alt}}" class="{{this.class}}" title="{{this.title}}">
+        </div>
+        {{/each}}
+    </div>
+</section>
+
+<section class="tell-us">
+    <div class="row align-center">
+        <h5 class="column large-8">
+            Tell us about your project.
+        </h5>
+    </div>
+    <div class="row align-center">
+        <div class="column small-12 medium-10 large-8">
+            <label for="full_name">Name</label>
+            <input type="text" id="full_name" name="name" placeholder="Type Your Name">
+        </div>
+    </div>
+    <div class="row align-center">
+        <div class="column small-12 medium-5 large-4">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Type Your Name">
+        </div>
+        <div class="column small-12 medium-5 large-4">
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone" placeholder="Type Your Name">
+        </div>
+    </div>
+    <div class="row align-center">
+        <div class="column small-12 medium-10 large-8">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+    </div>
+    <div class="row align-center">
+        <div class="column small-12 medium-10 large-8">
+            <input type="submit" id="tell_us_submit" name="tell_us_submit" class="button" placeholder="Type Your Name">
+        </div>
+    </div>
+</section>
+
+<section class="open-source-contributions">
+    <div class="row">
+        <div class="column large-12">
+            <h3>Open Source Contributions</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column large-4">
+            <ul>
+                <li>Drupal</li>
+                <li>
+                    <ul>
+                        <li>Tourney Module</li>
+                        <li>PURL for Drupal 8</li>
+                    </ul>
+                </li>
+                <li>Yeoman</li>
+                <li>
+                    <ul>
+                        <li>Drupal AL</li>
+                        <li>Something Else</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="column large-4">
+            <ul>
+                <li>Ruby</li>
+                <li>
+                    <ul>
+                        <li>Something</li>
+                        <li>Something</li>
+                    </ul>
+                </li>
+                <li>Javascript</li>
+                <li>
+                    <ul>
+                        <li>Something</li>
+                        <li>Something Else</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="quote">
+    <div class="row">
+        <div class="large-12 column">
+            <blockquote>
+                <q>I like working with ActiveLAMP.  The are super!</q>
+                <footer>
+                    - Big Bird, Web Producer, Sesame Street
+                </footer>
+            </blockquote>
+        </div>
+    </div>
+</section>
+
+<section class="discovery-process">
+    <div class="row align-middle align-spaced">
+        <div class="large-7 column">
+            <p>We don't start building until we know what your goals are.</p>
+        </div>
+        <div class="large-4 column">
+            <button class="big button">Our Discovery Process</button>
+        </div>
     </div>
 </section>

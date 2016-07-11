@@ -42,9 +42,17 @@ $('.search-toggle').click(function(e) {
   }
 });
 
+$('.top-bar').on('sticky.zf.stuckto:top', function(){
+  $('body').addClass('stuck-header');
+}).on('sticky.zf.unstuckfrom:top', function(){
+  $('body').removeClass('stuck-header');
+})
+
 inlineSVG.init({
   svgSelector: 'img.svg', // the class attached to all images that should be inlined
   initClass: 'js-inlinesvg', // class added to <html>
 }, function () {
-  console.log('All SVGs inlined');
+  // Callback after all SVG's are inlined
+  $('.activelamp-logo').css('height', '100px')[0].setAttribute('viewBox', '-20 0 70 34');
 });
+

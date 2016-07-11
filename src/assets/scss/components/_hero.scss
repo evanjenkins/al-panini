@@ -1,13 +1,13 @@
 .hero {
   background: none;
   position: relative;
-  top: -86px;
+  margin-top: -136px;
   z-index: 0;
   width: 100%;
   overflow: hidden;
 
   .inside {
-    padding: 250px 0;
+    padding: 200px 0 100px;
     color: $white;
   }
 
@@ -25,7 +25,7 @@
   }
 
   .backstretch {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: -50%;
     width: 200%;

@@ -45,18 +45,21 @@
 @include foundation-top-bar;
 @include foundation-visibility-classes;
 @include foundation-float-classes;
-// @include foundation-flex-classes;
+@include foundation-flex-classes;
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
 @import 'font-awesome';
 
+@import 'base/elements';
 @import 'base/mixins';
 @import 'mixins/logo';
 
 @import 'elements/type';
 @import 'elements/forms';
 
+@import 'components/page';
 @import 'components/hero';
 @import 'components/menu';
+@import 'components/home';
