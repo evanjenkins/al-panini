@@ -1,0 +1,12 @@
+- blog_1:
+  url: /blog/strategy-tactics
+  img: /assets/img/blog/strategy-tactics.jpg
+  title: A proper understanding between strategy and tactics.
+  alt: Strategy vs Tactics
+  class: strategy-tactics
+- blog_2:
+  url: /blog/d8-custom-fields
+  img: /assets/img/blog/d8-custom-fields.jpg
+  title: How to create a custom field-formatter in Drupal 8.
+  alt: Writing custom fields in Drupal 8
+  class: d8-custom-fields

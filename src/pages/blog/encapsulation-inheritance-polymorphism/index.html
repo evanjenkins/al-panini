@@ -1,0 +1,88 @@
+---
+wide-img: /assets/img/our-work/mockup-1.png
+---
+
+
+<section class="hero">
+    <div class="row inside expanded">
+        <div class="large-offset-2 small-offset-1 small-10 small-centered column">
+            <h1>ENCAPSULATION, INHERITANCE, AND POLYMORPHISM</h1>
+            <div class="reading-time">
+                <img src="{{root}}assets/img/blog/clock-white.svg" />
+                <p>8 minute read</p>
+            </div>
+            {{#each author-tomfriedhof}}
+            <div class="author">
+                <img src="{{this.img}}" />
+                <p>by {{this.name}}</p>
+            </div>
+            {{/each}}
+            <div class="tags">
+                {{#each blog-encapsulation-tags}}
+                    <a href="{{this.url}}" class="tag">{{this.name}}</a>
+                {{/each}}
+            </div>
+            <div class="play">
+                <a href="#" rel="nofollow"><i class="fa fa-play-circle" aria-hidden="true"></i> Play the Video</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="backstretch">
+        <img src="{{root}}assets/img/wallpapers/latest-features@2x.jpg" />
+    </div>
+</section>
+
+<section class="blog-post">
+    <div class="row">
+        <div class="medium-offset-2 medium-8 large-offset-3 large-6 columns">
+            <h3>Strategy</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet commodo risus, in eleifend odio. Aliquam erat volutpat. Integer at nisi est. Phasellus eu lacus quis purus pharetra mattis. Cras feugiat justo ac orci mattis, non semper urna luctus. Integer consectetur risus vitae tellus maximus condimentum. Aenean mollis ex at erat auctor, vitae suscipit mauris placerat. Maecenas pellentesque purus vel sem aliquet vehicula.</p>
+            <p>Suspendisse nec velit vel metus finibus varius. In accumsan sem justo, nec pharetra massa semper sed. Nulla hendrerit gravida auctor. Pellentesque sapien leo, aliquet ut arcu id, sagittis viverra libero. Aenean sollicitudin efficitur nisi at convallis. Nam pulvinar mi ut metus sagittis sagittis. Morbi a lacinia nibh, in aliquet sem. In posuere sollicitudin nulla, nec condimentum dolor dapibus ac.</p>
+        </div>
+    </div>
+    <img src="{{root}}assets/img/blog/wide-image.jpg" class="full-width-image" />
+    <div class="row">
+        <div class="medium-offset-2 medium-8 large-offset-3 large-6 columns">
+            <h3>Design</h3>
+            <p>Vestibulum placerat dui non erat ullamcorper, vitae bibendum turpis aliquam. Fusce dictum metus quis ante consequat vulputate. Maecenas vel commodo nulla. Fusce facilisis turpis at egestas rutrum. Fusce in urna non sapien vulputate egestas ultrices ut libero. Mauris ligula quam, euismod ac risus eget, ullamcorper porttitor nisl. Morbi tristique, ex sit amet sollicitudin luctus, massa lorem fermentum dolor, a consequat est nisi vitae lorem. Praesent malesuada sagittis nisl, vitae fringilla metus.</p>
+            <p>Curabitur bibendum lectus metus. Etiam non ex nec augue sollicitudin porta. Praesent vestibulum tristique lectus, in porta dui commodo vel. Donec eu velit arcu. Duis ut ante eleifend massa euismod laoreet. Pellentesque vehicula sapien a vestibulum imperdiet. Maecenas ac quam nec sem ullamcorper fringilla ut a neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipit condimentum tempus. Aenean iaculis, est eget tempus vulputate, elit tellus auctor libero, sit amet mollis tellus odio et tortor. Curabitur quis nibh ut metus posuere euismod quis quis enim. Vivamus imperdiet dui a erat vulputate semper.</p>
+            <div class="related-articles">
+                <h6>You might also like</h6>
+                {{#each blog-encapsulation-related}}
+                    <a href="{{this.url}}" class="blog-post {{this.class}}">
+                        <img src="{{this.img}}" alt="{{this.alt}}" class="{{this.class}}" />
+                        {{this.title}}
+                    </a>
+                {{/each}}
+            </div>
+            <h3>Development</h3>
+            <p>Integer ullamcorper lorem vel eros sagittis, sed cursus ante suscipit. Vestibulum scelerisque quis augue et pulvinar. Fusce a odio fermentum, consequat libero accumsan, rhoncus libero. Maecenas vel eros nec metus rhoncus eleifend. Donec ut urna eget ex gravida efficitur id eu dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus leo enim, semper ut orci id, vehicula efficitur velit. Nullam eget risus elementum, laoreet mi eget, finibus mauris. Duis luctus finibus ante ut porta. Aliquam erat volutpat.</p>
+            <p>Suspendisse nec velit vel metus finibus varius. In accumsan sem justo, nec pharetra massa semper sed. Nulla hendrerit gravida auctor. Pellentesque sapien leo, aliquet ut arcu id, sagittis viverra libero. Aenean sollicitudin efficitur nisi at convallis. Nam pulvinar mi ut metus sagittis sagittis. Morbi a lacinia nibh, in aliquet sem. In posuere sollicitudin nulla, nec condimentum dolor dapibus ac.</p>
+            <h3>Support</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet commodo risus, in eleifend odio. Aliquam erat volutpat. Integer at nisi est. Phasellus eu lacus quis purus pharetra mattis. Cras feugiat justo ac orci mattis, non semper urna luctus. Integer consectetur risus vitae tellus maximus condimentum. Aenean mollis ex at erat auctor, vitae suscipit mauris placerat. Maecenas pellentesque purus vel sem aliquet vehicula.</p>
+            <p>Suspendisse nec velit vel metus finibus varius. In accumsan sem justo, nec pharetra massa semper sed. Nulla hendrerit gravida auctor. Pellentesque sapien leo, aliquet ut arcu id, sagittis viverra libero. Aenean sollicitudin efficitur nisi at convallis. Nam pulvinar mi ut metus sagittis sagittis. Morbi a lacinia nibh, in aliquet sem. In posuere sollicitudin nulla, nec condimentum dolor dapibus ac.</p>
+            <h3>Marketing</h3>
+            <p>Vestibulum placerat dui non erat ullamcorper, vitae bibendum turpis aliquam. Fusce dictum metus quis ante consequat vulputate. Maecenas vel commodo nulla. Fusce facilisis turpis at egestas rutrum. Fusce in urna non sapien vulputate egestas ultrices ut libero. Mauris ligula quam, euismod ac risus eget, ullamcorper porttitor nisl. Morbi tristique, ex sit amet sollicitudin luctus, massa lorem fermentum dolor, a consequat est nisi vitae lorem. Praesent malesuada sagittis nisl, vitae fringilla metus.</p>
+            <p>Curabitur bibendum lectus metus. Etiam non ex nec augue sollicitudin porta. Praesent vestibulum tristique lectus, in porta dui commodo vel. Donec eu velit arcu. Duis ut ante eleifend massa euismod laoreet. Pellentesque vehicula sapien a vestibulum imperdiet. Maecenas ac quam nec sem ullamcorper fringilla ut a neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipit condimentum tempus. Aenean iaculis, est eget tempus vulputate, elit tellus auctor libero, sit amet mollis tellus odio et tortor. Curabitur quis nibh ut metus posuere euismod quis quis enim. Vivamus imperdiet dui a erat vulputate semper.</p>
+            <h3>Results</h3>
+            <p>Integer ullamcorper lorem vel eros sagittis, sed cursus ante suscipit. Vestibulum scelerisque quis augue et pulvinar. Fusce a odio fermentum, consequat libero accumsan, rhoncus libero. Maecenas vel eros nec metus rhoncus eleifend. Donec ut urna eget ex gravida efficitur id eu dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus leo enim, semper ut orci id, vehicula efficitur velit. Nullam eget risus elementum, laoreet mi eget, finibus mauris. Duis luctus finibus ante ut porta. Aliquam erat volutpat.</p>
+            {{#each author-tomfriedhof}}
+                <div class="{{this.class}} {{this.class}}-{{this.name}} row">
+                    <div class="large-3 columns">
+                        <img src="{{this.img}}" />
+                    </div>
+                    <div class="large-9 columns">
+                        <h3>{{this.name}}</h3>
+                        <h6>{{this.title}}</h6>
+                        <p>{{this.description1}}</p>
+                        <p>{{this.description2}}</p>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</section>
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57ae5620ca7e69ec"></script>

@@ -1,0 +1,12 @@
+- tag_1:
+  url: /tag/drupal
+  name: Drupal
+  class: tag
+- tag_2:
+  url: /tag/oop
+  name: Object Oriented Programming
+  class: tag
+- tag_3:
+  url: /tag/development
+  name: Development
+  class: tag
