@@ -103,3 +103,12 @@ img.full-width-image {
   width: 100%;
   margin: 2em 0 3em 0;
 }
+
+.video-wrapper {
+  .embedded_video {
+    position: relative;
+    width: 670px;
+    height: 377px;
+    max-width: 100%;
+  }
+}
