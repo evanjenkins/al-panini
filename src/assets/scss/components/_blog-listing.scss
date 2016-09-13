@@ -1,0 +1,40 @@
+section.blog-listing {
+  padding: 0;
+}
+
+ul.blog-listing {
+  margin: 0;
+  li {
+    max-width: 90%;
+    margin: 5%;
+    text-align: center;
+    vertical-align: top;
+    list-style-type: none;
+    @media only screen and (min-width: 640px) and (max-width: 960px) {
+      max-width: 45%;
+      margin: 2.35%;
+      display: inline-block;
+    }
+    @media only screen and (min-width: 960px) {
+      max-width: 20%;
+      margin: 2.25%;
+      display: inline-block;
+    }
+    h3, h4 {
+      text-transform: uppercase;
+    }
+    h4 {
+      font-size: 1em;
+      margin-top: 1em;
+    }
+    h3 {
+      font-size: 1.3em;
+      color: #d33;
+      margin-bottom: 1em;
+    }
+    p {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+- blog_1:
+  title: Drupal 8 Development in Docker - Redux
+  type: Docker
+  nutgraf: Morbi ex enim, rhoncus iaculis dignissim ac, laoreet in nisl. Ut rutrum lobortis est at malesuada. Curabitur sed risus lectus. Suspendisse in elementum orci.
+  img: /assets/img/blog-listing/image-01.jpg
+- blog_2:
+  title: 10 Things Every Jr. Drupal Web Developer Needs to Know
+  type: Drupal
+  nutgraf: Morbi ex enim, rhoncus iaculis dignissim ac, laoreet in nisl. Ut rutrum lobortis est at malesuada. Curabitur sed risus lectus. Suspendisse in elementum orci.
+  img: /assets/img/blog-listing/image-02.jpg
+- blog_3:
+  title: Writing custom fields in Drupal 8 - Part 2
+  type: Drupal
+  nutgraf: Morbi ex enim, rhoncus iaculis dignissim ac, laoreet in nisl. Ut rutrum lobortis est at malesuada. Curabitur sed risus lectus. Suspendisse in elementum orci.
+  img: /assets/img/blog-listing/image-03.jpg
+- blog_4:
+  title: Writing custom fields in Drupal 8 - Part 1
+  type: Drupal
+  nutgraf: Morbi ex enim, rhoncus iaculis dignissim ac, laoreet in nisl. Ut rutrum lobortis est at malesuada. Curabitur sed risus lectus. Suspendisse in elementum orci.
+  img: /assets/img/blog-listing/image-04.jpg
+- blog_5:
+  title: Going back to Drupal, it's fun again!
+  type: Jekyll
+  nutgraf: Morbi ex enim, rhoncus iaculis dignissim ac, laoreet in nisl. Ut rutrum lobortis est at malesuada. Curabitur sed risus lectus. Suspendisse in elementum orci.
+  img: /assets/img/blog-listing/image-05.jpg
+- blog_6:
+  title: Adding CKEditor plugins to Drupal 8
+  type: Feature Update
+  nutgraf: Morbi ex enim, rhoncus iaculis dignissim ac, laoreet in nisl. Ut rutrum lobortis est at malesuada. Curabitur sed risus lectus. Suspendisse in elementum orci.
+  img: /assets/img/blog-listing/image-06.jpg
+- blog_7:
+  title: Strategy vs Tactics
+  type: Marketing
+  nutgraf: Morbi ex enim, rhoncus iaculis dignissim ac, laoreet in nisl. Ut rutrum lobortis est at malesuada. Curabitur sed risus lectus. Suspendisse in elementum orci.
+  img: /assets/img/blog-listing/image-07.jpg
+- blog_8:
+  title: Extending Drupal - all about the service container
+  type: Article
+  nutgraf: Morbi ex enim, rhoncus iaculis dignissim ac, laoreet in nisl. Ut rutrum lobortis est at malesuada. Curabitur sed risus lectus. Suspendisse in elementum orci.
+  img: /assets/img/blog-listing/image-08.png
