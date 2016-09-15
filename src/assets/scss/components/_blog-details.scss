@@ -78,3 +78,48 @@ img.full-width-image {
     max-width: 100%;
   }
 }
+
+ul.more-from-author {
+  margin: 0;
+  li {
+    max-width: 90%;
+    margin: 5%;
+    text-align: center;
+    vertical-align: top;
+    list-style-type: none;
+    @media only screen and (min-width: 640px) {
+      max-width: 45%;
+      margin: 2.35%;
+      display: inline-block;
+    }
+    h3, h4 {
+      text-transform: uppercase;
+    }
+    h4 {
+      font-size: 1em;
+      margin-top: 1em;
+    }
+    h3 {
+      font-size: 1.3em;
+      color: #d33;
+      margin-bottom: 1em;
+    }
+    p {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+}
+
+h3.more-from-author {
+  text-align: center;
+}
+
+.row.github {
+  background-color: #e3e3e3;
+  padding: 3em 0;
+  margin: 2em 0;
+  h3.github {
+    margin-top: 1em;
+  }
+}

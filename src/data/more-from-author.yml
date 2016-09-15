@@ -1,0 +1,20 @@
+- blog_1:
+  title: Drupal 8 Development in Docker - Redux
+  type: Docker
+  nutgraf: Morbi ex enim, rhoncus iaculis dignissim ac, laoreet in nisl. Ut rutrum lobortis est at malesuada. Curabitur sed risus lectus. Suspendisse in elementum orci.
+  img: /assets/img/blog-listing/image-01.jpg
+- blog_2:
+  title: 10 Things Every Jr. Drupal Web Developer Needs to Know
+  type: Drupal
+  nutgraf: Morbi ex enim, rhoncus iaculis dignissim ac, laoreet in nisl. Ut rutrum lobortis est at malesuada. Curabitur sed risus lectus. Suspendisse in elementum orci.
+  img: /assets/img/blog-listing/image-02.jpg
+- blog_3:
+  title: Writing custom fields in Drupal 8 - Part 2
+  type: Drupal
+  nutgraf: Morbi ex enim, rhoncus iaculis dignissim ac, laoreet in nisl. Ut rutrum lobortis est at malesuada. Curabitur sed risus lectus. Suspendisse in elementum orci.
+  img: /assets/img/blog-listing/image-03.jpg
+- blog_4:
+  title: Writing custom fields in Drupal 8 - Part 1
+  type: Drupal
+  nutgraf: Morbi ex enim, rhoncus iaculis dignissim ac, laoreet in nisl. Ut rutrum lobortis est at malesuada. Curabitur sed risus lectus. Suspendisse in elementum orci.
+  img: /assets/img/blog-listing/image-04.jpg
