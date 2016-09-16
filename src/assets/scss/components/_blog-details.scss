@@ -25,10 +25,10 @@ $white: #fff;
 /** Related Tags */
 .tags {
   clear: both;
-  a {
+  a.tag {
     background-color: $red;
     color: $white;
-    padding: 0.25em 1em;
+    padding: 0.5em 1em;
   }
 }
 

@@ -25,10 +25,19 @@ hero_url: /blog/encapsulation-inheritance-polymorphism/index.html
 </section>
 
 <section class="blog-listing">
-    <div class="tags">
-        <a href="/tag/drupal" class="tag">Drupal</a>
-        <a href="/tag/oop" class="tag">Object Oriented Programming</a>
-        <a href="/tag/development" class="tag">Development</a>
+    <div class="row">
+        <div class="small-12 columns">
+            <h3>What topics interest you: </h3>
+            <div class="tags">
+                <a href="/tag/drupal" class="tag">Drupal</a>
+                <a href="/tag/development" class="tag">Development</a>
+                <a href="/tag/oop" class="tag">UX Design</a>
+                <a href="/tag/development" class="tag">Culture</a>
+                <a href="/tag/development" class="tag">Devops</a>
+                <a href="/tag/development" class="tag">Marketing</a>
+                <a href="/tag/development"><img src="/assets/img/blog/magnifying-glass.svg" class="magnifying-glass"></a>
+            </div>
+        </div>
     </div>
     <ul class="blog-listing">
         {{#each blog-listing}}
@@ -40,5 +49,52 @@ hero_url: /blog/encapsulation-inheritance-polymorphism/index.html
             </li>
         {{/each}}
     </ul>
+    <div class="row">
+        <div class="small-12 columns">
+            <a href="" class="load-more-posts">Load more posts</a>
+        </div>
+    </div>
+</section>
+<section class="partner-with-you">
+    <div class="row partner-with-you">
+        <div class="small-12 medium-offset-1 medium-4 columns">
+            <h3>We write about our experience on partner projects. We can partner with you!</h3>
+        </div>
+        <div class="small-12 medium-offset-1 medium-5 columns">
+        <form>
+            <div class="row">
+                <div class="small-12 columns">
+                    <label>Name
+                        <input type="text" placeholder="Name" />
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-6 columns">
+                    <label>Email Address
+                        <input type="text" placeholder="Email Address" />
+                    </label>
+                </div>
+                <div class="small-6 columns">
+                    <label>Phone
+                        <input type="text" placeholder="Phone Number" />
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-12 columns">
+                    <label>Message
+                        <textarea placeholder="Message"></textarea>
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-offset-8 small-3">
+                    <a href="" class="button">Send Message</a>
+                </div>
+            </div>
+        </form>
+        </div>
+    </div>
 </section>
 
