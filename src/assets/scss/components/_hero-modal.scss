@@ -1,0 +1,26 @@
+.hero-modal {
+  background: rgba(0, 0, 0, 0.9);
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.showing-modal {
+  transform: translate3d(0px, 0px, 0px);
+  visibility: inherit;
+  z-index: 100;
+}
+
+.no-overflow {
+  overflow: hidden;
+}
+
+.hero-modal-close {
+  position: absolute;
+  right: .5em;
+  top: 1em;
+}

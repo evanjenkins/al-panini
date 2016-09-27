@@ -1,6 +1,7 @@
 $(document).foundation();
 var $menu = $('#menu-more');
 var $search = $('#searchForm');
+var $modal  = $('#hero_modal');
 
 $menu.click(function(e) {
   e.preventDefault();
@@ -46,7 +47,7 @@ $('.top-bar').on('sticky.zf.stuckto:top', function(){
   $('body').addClass('stuck-header');
 }).on('sticky.zf.unstuckfrom:top', function(){
   $('body').removeClass('stuck-header');
-})
+});
 
 inlineSVG.init({
   svgSelector: 'img.svg', // the class attached to all images that should be inlined
@@ -56,3 +57,28 @@ inlineSVG.init({
   $('.activelamp-logo').css('height', '100px')[0].setAttribute('viewBox', '-20 0 70 34');
 });
 
+$('.hero-modal-play').click(function(e){
+  e.preventDefault();
+  if($modal.hasClass('showing-modal')) {
+    player.pauseVideo();
+    $modal.fadeToggle();
+    $modal.removeClass('showing-modal');
+  }
+  else {
+    $modal.fadeToggle();
+    $('body').addClass('no-overflow');
+    $modal.addClass('showing-modal');
+    player.playVideo();
+  }
+});
+
+$('.hero-modal-close').click(function(e){
+  e.preventDefault();
+  player.stopVideo();
+  $modal.fadeToggle();
+
+  setTimeout(function() {
+    $modal.removeClass('showing-modal');
+    $('body').removeClass('no-overflow');
+  }, 300);
+});
