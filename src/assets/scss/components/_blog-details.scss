@@ -1,0 +1,125 @@
+/** Variables */
+$red: #c02126;
+$white: #fff;
+
+/** Author info for bottom of page */
+.author-info {
+  border-top: solid 3px $red;
+  margin-top: 2em;
+  padding-top: 2em;
+  img {
+    height: 140px;
+    float: left;
+    margin: 0 2em 1em 0;
+  }
+  h3 {
+    margin-bottom: 0em;
+    line-height: 1em;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+
+/** Related Tags */
+.tags {
+  clear: both;
+  a.tag {
+    background-color: $red;
+    color: $white;
+    padding: 0.5em 1em;
+  }
+}
+
+/** Related Articles */
+.related-articles {
+  width: 260px;
+  margin-left: -8em;
+  float: left;
+  padding: 2em 1.5em;
+  h6 {
+    margin-bottom: 2em;
+  }
+  a {
+    display: block;
+    margin-top: 2em;
+    font-size: 14px;
+  }
+  a img {
+    margin-bottom: 1em;
+  }
+  @media all and (max-width: 640px) {
+    margin-left: 0;
+    width: 100%;
+    h6 {
+      margin-bottom: 0;
+    }
+    a {
+      width: 50%;
+      padding: 1em;
+      display: inline-block;
+      float: left;
+    }
+  }
+}
+
+/** Full Width Image */
+img.full-width-image {
+  width: 100%;
+  margin: 2em 0 3em 0;
+}
+
+.video-wrapper {
+  .embedded_video {
+    position: relative;
+    width: 670px;
+    height: 377px;
+    max-width: 100%;
+  }
+}
+
+ul.more-from-author {
+  margin: 0;
+  li {
+    max-width: 90%;
+    margin: 5%;
+    text-align: center;
+    vertical-align: top;
+    list-style-type: none;
+    @media only screen and (min-width: 640px) {
+      max-width: 45%;
+      margin: 2.35%;
+      display: inline-block;
+    }
+    h3, h4 {
+      text-transform: uppercase;
+    }
+    h4 {
+      font-size: 1em;
+      margin-top: 1em;
+    }
+    h3 {
+      font-size: 1.3em;
+      color: #d33;
+      margin-bottom: 1em;
+    }
+    p {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+}
+
+h3.more-from-author {
+  text-align: center;
+}
+
+.row.github {
+  background-color: #e3e3e3;
+  padding: 3em 0;
+  margin: 2em 0;
+  h3.github {
+    margin-top: 1em;
+  }
+}

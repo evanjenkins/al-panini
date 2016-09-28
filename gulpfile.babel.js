@@ -26,7 +26,7 @@ function loadConfig() {
 
 // Build the "dist" folder by running all of the below tasks
 gulp.task('build',
- gulp.series(clean, gulp.parallel(pages, sass, javascript, images, copy), styleGuide));
+ gulp.series(clean, gulp.parallel(pages, sass, javascript, javascript_copy, images, copy), styleGuide));
 
 // Build the site, run the server, and watch for file changes
 gulp.task('default',
@@ -78,6 +78,9 @@ function sass() {
   return gulp.src('src/assets/scss/app.scss')
     .pipe($.sourcemaps.init())
     .pipe($.sass({
+      sourceComments: 'map',
+      sourceMap: 'sass',
+      outputStyle: 'nested',
       includePaths: PATHS.sass
     })
       .on('error', $.sass.logError))
@@ -103,6 +106,12 @@ function javascript() {
       .on('error', e => { console.log(e); })
     ))
     .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
+    .pipe(gulp.dest(PATHS.dist + '/assets/js'));
+}
+
+// Javascript libraries to copy straight over.
+function javascript_copy() {
+  return gulp.src(PATHS.javascript_copy)
     .pipe(gulp.dest(PATHS.dist + '/assets/js'));
 }
 

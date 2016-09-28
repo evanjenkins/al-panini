@@ -1,0 +1,30 @@
+.logos {
+  background-color: $light-gray;
+
+  img,
+  svg {
+    width: 250px;
+    padding: 15px 0;
+  }
+
+  text-align: center;
+}
+
+.tell-us {
+  background-color: darken($light-gray, 10%);
+}
+
+.quote {
+  background-color: $light-gray;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.discovery-process {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  p {
+    font-size: 2.4em;
+  }
+}

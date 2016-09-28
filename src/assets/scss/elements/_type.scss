@@ -3,10 +3,19 @@
 ///////////////////////////
 
 .logo-img {
+  @include site-logo("white", 50px, 150px);
   margin: 0;
+  padding-top: 10px;
   line-height: 2;
 
   @include breakpoint(medium up) {
     line-height: 1.2;
+  }
+
+}
+
+.no-wordmark {
+  .wordmark {
+    display: none;
   }
 }

@@ -1,0 +1,109 @@
+.hero {
+  background: none;
+  position: relative;
+  margin-top: -136px;
+  z-index: 0;
+  width: 100%;
+  overflow: hidden;
+
+  .inside {
+    padding: 200px 0 100px;
+    color: $white;
+  }
+
+  .play {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    padding-top: 60px;
+    i {
+      padding: 10px;
+      font-size: 3rem;
+      display: block;
+    }
+
+  }
+
+  .backstretch {
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 200%;
+    height: 600px;
+    z-index: -9999;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      min-width: 50%;
+      min-height: 50%;
+    }
+  }
+}
+
+/** Clock and Reading Time */
+.reading-time {
+  margin-bottom: 2em;
+  img {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    float: left;
+    margin-right: 1em;
+  }
+  p {
+    top: 0.25em;
+    position: relative;
+  }
+}
+
+/** Author photo and information at top of page  */
+$image-height: 60px;
+.author {
+  clear: both;
+  margin-bottom: 2em;
+  height: $image-height;
+  img {
+    height: $image-height;
+    display: inline-block;
+    float: left;
+    margin-right: 1em;
+  }
+  p {
+    top: 1em;
+    position: relative;
+  }
+}
+
+.hero.blog-listing {
+  h1, p.description {
+    text-align: center;
+    padding: 0 20%;
+  }
+  h1 {
+    font-size: 250%;
+  }
+  .author {
+    text-align: center;
+    margin-top: 2em;
+    img {
+      float: none;
+    }
+    p {
+      clear: both;
+    }
+  }
+}
+
+.read-more {
+  text-align: center;
+  padding-top: 4em;
+}
+
+img.down-arrow {
+  width: 35px;
+}

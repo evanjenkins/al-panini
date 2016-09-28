@@ -1,0 +1,45 @@
+- logo_1:
+  img: /assets/img/our-work/logos/activelamp-logo.svg
+  title: Some Title 1
+  alt: ActiveLAMP
+  class: svg
+- logo_2:
+  img: /assets/img/our-work/logos/activelamp-logo.svg
+  title: Some Title 1
+  alt: ActiveLAMP
+  class: svg
+- logo_3:
+  img: /assets/img/our-work/logos/activelamp-logo.svg
+  title: Some Title 1
+  alt: ActiveLAMP
+  class: svg
+- logo_4:
+  img: /assets/img/our-work/logos/activelamp-logo.svg
+  title: Some Title 1
+  alt: ActiveLAMP
+  class: svg
+- logo_5:
+  img: /assets/img/our-work/logos/activelamp-logo.svg
+  title: Some Title 1
+  alt: ActiveLAMP
+  class: svg
+- logo_6:
+  img: /assets/img/our-work/logos/activelamp-logo.svg
+  title: Some Title 1
+  alt: ActiveLAMP
+  class: svg
+- logo_7:
+  img: /assets/img/our-work/logos/activelamp-logo.svg
+  title: Some Title 1
+  alt: ActiveLAMP
+  class: svg
+- logo_8:
+  img: /assets/img/our-work/logos/activelamp-logo.svg
+  title: Some Title 1
+  alt: ActiveLAMP
+  class: svg
+- wide_image:
+  img: /assets/img/our-work/logos/activelamp-logo.svg
+  title: Some Title 1
+  alt: ActiveLAMP
+  class: svg
