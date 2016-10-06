@@ -1,0 +1,316 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="../../assets/css/app.css">
+    <link rel="stylesheet" href="../../assets/css/prism.css">
+  </head>
+  <body>
+  <div class="off-canvas-wrapper">
+    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+
+      <div class="off-canvas position-right" id="offCanvas" data-off-canvas data-position="right">
+
+        <!-- Menu -->
+        <ul class="vertical menu">
+          <li><a href="#">Home</a></li>
+          <li class="hide-for-large"><a href="#">Our Work</a></li>
+          <li class="hide-for-large"><a href="#">What We Do</a></li>
+          <li class="hide-for-large"><a href="#">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Videos</a></li>
+          <li><a href="#">Who We Are</a></li>
+        </ul>
+
+      </div>
+
+      <div class="off-canvas-content main-content" data-off-canvas-content>
+        <header data-sticky-container>
+          <div class="top-bar header header--airy sticky" data-sticky data-options="marginTop:0">
+            <div class="top-bar-left">
+              <h1 class="logo-img">
+                <a href="/">
+                  <img src="../../assets/img/activelamp-logo.svg" class="svg" alt="ActiveLAMP" />
+                </a>
+              </h1>
+            </div>
+            <div class="top-bar-right">
+              <ul class="menu">
+                <li class="show-for-large"><a href="#">Our Work</a></li>
+                <li class="show-for-large"><a href="#">What We Do</a></li>
+                <li class="show-for-large"><a href="#">Contact</a></li>
+                <li><a href="#" class="search-toggle search-toggle--closed"><i class="fa fa-search"></i></a></li>
+                <li>
+                  <button id="menu-more" class="hamburger hamburger--spring" data-toggle="OffCanvas" type="button" style="-webkit-user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); touch-action: pan-y;">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <form action="/" method="get" id="searchForm" class="top-bar--search">
+              <fieldset>
+                <input type="text" id="search_term" name="keywords" placeholder="Search ActiveLAMP.com" class="clearClick">
+                <div id="search_go" class="top-bar--search-go">
+                  <a href="#" class=""><i class="fa fa-2x fa-arrow-circle-right"></i></a>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </header>
+
+        
+        <section class="hero">
+            <div class="row inside">
+                <div class="medium-offset-1 large-offset-1 small-12 small-centered column">
+                    <h1>ENCAPSULATION, INHERITANCE, AND POLYMORPHISM</h1>
+                    <div class="reading-time">
+                        <img src="../../assets/img/blog/clock-white.svg" />
+                        <p>8 minute read</p>
+                    </div>
+                    <div class="author">
+                        <img src="/assets/img/blog/tom-friedhof.jpg" />
+                        <p>by Tom Friedhof</p>
+                    </div>
+                    <div class="tags">
+                        <a href="/tag/drupal" class="tag">Drupal</a>
+                        <a href="/tag/oop" class="tag">Object Oriented Programming</a>
+                        <a href="/tag/development" class="tag">Development</a>
+                    </div>
+                </div>
+                <div class="small-12 small-centered column">
+                    <div class="hero-modal-play play">
+                        <a href="#" rel="nofollow"><i class="fa fa-play-circle" aria-hidden="true"></i> Play the Video</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="backstretch">
+                <img src="../../assets/img/wallpapers/latest-features@2x.jpg" />
+            </div>
+        </section>
+        
+        <div class="hero-modal" aria-hidden="true" id="hero_modal">
+            <a href="#" class="hero-modal-close fa fa-2x fa-close" rel="nofollow"></a>
+            <div id="player"></div>
+        </div>
+        
+        <section class="blog-post">
+            <div class="row">
+                <div class="medium-offset-2 medium-8 columns">
+                    <h3>Strategy</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet commodo risus, in eleifend odio. Aliquam erat volutpat. Integer at nisi est. Phasellus eu lacus quis purus pharetra mattis. Cras feugiat justo ac orci mattis, non semper urna luctus. Integer consectetur risus vitae tellus maximus condimentum. Aenean mollis ex at erat auctor, vitae suscipit mauris placerat. Maecenas pellentesque purus vel sem aliquet vehicula.</p>
+                    <p>Suspendisse nec velit vel metus finibus varius. In accumsan sem justo, nec pharetra massa semper sed. Nulla hendrerit gravida auctor. Pellentesque sapien leo, aliquet ut arcu id, sagittis viverra libero. Aenean sollicitudin efficitur nisi at convallis. Nam pulvinar mi ut metus sagittis sagittis. Morbi a lacinia nibh, in aliquet sem. In posuere sollicitudin nulla, nec condimentum dolor dapibus ac.</p>
+                </div>
+            </div>
+            <img src="../../assets/img/blog/wide-image.jpg" class="full-width-image" />
+            <div class="row">
+                <div class="medium-offset-2 medium-8 columns">
+                    <h3>Design</h3>
+                    <p>Vestibulum placerat dui non erat ullamcorper, vitae bibendum turpis aliquam. Fusce dictum metus quis ante consequat vulputate. Maecenas vel commodo nulla. Fusce facilisis turpis at egestas rutrum. Fusce in urna non sapien vulputate egestas ultrices ut libero. Mauris ligula quam, euismod ac risus eget, ullamcorper porttitor nisl. Morbi tristique, ex sit amet sollicitudin luctus, massa lorem fermentum dolor, a consequat est nisi vitae lorem. Praesent malesuada sagittis nisl, vitae fringilla metus.</p>
+                    <p>Curabitur bibendum lectus metus. Etiam non ex nec augue sollicitudin porta. Praesent vestibulum tristique lectus, in porta dui commodo vel. Donec eu velit arcu. Duis ut ante eleifend massa euismod laoreet. Pellentesque vehicula sapien a vestibulum imperdiet. Maecenas ac quam nec sem ullamcorper fringilla ut a neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipit condimentum tempus. Aenean iaculis, est eget tempus vulputate, elit tellus auctor libero, sit amet mollis tellus odio et tortor. Curabitur quis nibh ut metus posuere euismod quis quis enim. Vivamus imperdiet dui a erat vulputate semper.</p>
+                    <div class="related-articles">
+                        <h6>You might also like</h6>
+                        <a href="/blog/strategy-tactics" class="blog-post strategy-tactics">
+                            <img src="/assets/img/blog/strategy-tactics.jpg" alt="Strategy vs Tactics" class="strategy-tactics" />
+                            A proper understanding between strategy and tactics.
+                        </a>
+                        <a href="/blog/d8-custom-fields" class="blog-post d8-custom-fields">
+                            <img src="/assets/img/blog/d8-custom-fields.jpg" alt="Writing custom fields in Drupal 8" class="d8-custom-fields" />
+                            How to create a custom field-formatter in Drupal 8.
+                        </a>
+                    </div>
+                    <h3>Development</h3>
+                    <p>Integer ullamcorper lorem vel eros sagittis, sed cursus ante suscipit. Vestibulum scelerisque quis augue et pulvinar. Fusce a odio fermentum, consequat libero accumsan, rhoncus libero. Maecenas vel eros nec metus rhoncus eleifend. Donec ut urna eget ex gravida efficitur id eu dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus leo enim, semper ut orci id, vehicula efficitur velit. Nullam eget risus elementum, laoreet mi eget, finibus mauris. Duis luctus finibus ante ut porta. Aliquam erat volutpat.</p>
+                    <p>Suspendisse nec velit vel metus finibus varius. In accumsan sem justo, nec pharetra massa semper sed. Nulla hendrerit gravida auctor. Pellentesque sapien leo, aliquet ut arcu id, sagittis viverra libero. Aenean sollicitudin efficitur nisi at convallis. Nam pulvinar mi ut metus sagittis sagittis. Morbi a lacinia nibh, in aliquet sem. In posuere sollicitudin nulla, nec condimentum dolor dapibus ac.</p>
+                    <h3>Support</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet commodo risus, in eleifend odio. Aliquam erat volutpat. Integer at nisi est. Phasellus eu lacus quis purus pharetra mattis. Cras feugiat justo ac orci mattis, non semper urna luctus. Integer consectetur risus vitae tellus maximus condimentum. Aenean mollis ex at erat auctor, vitae suscipit mauris placerat. Maecenas pellentesque purus vel sem aliquet vehicula.</p>
+                    <p>Suspendisse nec velit vel metus finibus varius. In accumsan sem justo, nec pharetra massa semper sed. Nulla hendrerit gravida auctor. Pellentesque sapien leo, aliquet ut arcu id, sagittis viverra libero. Aenean sollicitudin efficitur nisi at convallis. Nam pulvinar mi ut metus sagittis sagittis. Morbi a lacinia nibh, in aliquet sem. In posuere sollicitudin nulla, nec condimentum dolor dapibus ac.</p>
+                </div>
+            </div>
+        
+            <!-- Terminal Code Block -->
+            <div class="blog-post-content">
+                <div class="terminal">
+                    <div class="icons"><span></span></div>
+                    <div class="title">&nbsp;</div>
+                    <pre>
+                        <code class="language-bash">
+        $ docker build -t &lt;image&gt;:latest .
+        $ docker push &lt;image&gt;:latest
+                        </code>
+                    </pre>
+                </div>
+            </div>
+        
+        
+            <!-- Vagrant Code Block -->
+            <div class="blog-post-content">
+                <h1>Code Block Examples</h1>
+                <div class="full-width code-block">
+                    <div class="filename"><span>Vagrantfile:</span></div>
+                    <pre>
+                        <code class="language-ruby">
+        Vagrant.configure("2") do |config|
+        
+          config.vm.box = "debian/jessie64"
+          config.vm.network :private_network, ip: "192.168.100.251"
+        
+          config.vm.hostname = 'apa.dev'
+        
+          config.vm.provider :virtualbox do |vb|
+            vb.name = "apa.dev-v2"
+            vb.memory = 2048
+          end
+        
+          if Vagrant.has_plugin?("vagrant-gatling-rsync")
+            config.gatling.rsync_on_startup = false
+          end
+        
+          config.ssh.forward_agent = true
+        
+          config.vm.provision "shell",
+            inline: '[ -e /usr/local/bin/safesync ] && : || ln -sF /vagrant/safesync /usr/local/bin/safesync', run: 'once'
+        
+          config.vm.provision "shell",
+            inline: '[ -e /usr/local/bin/safesync ] && chmod og+x /usr/local/bin/safesync', run: 'once'
+        
+          config.vm.provision :docker
+          config.vm.provision :docker_compose, yml: "/vagrant/docker-compose.yml", run: "always", compose_version: "1.7.1"
+        
+          config.vm.provision :shell,
+            inline: "[ ! -d /mnt/files ] && mkdir -p /mnt/files"
+        
+          config.vm.provision :shell,
+            inline: "[ -e /mnt/files ] && chmod -R og+rwx /mnt/files", run: "always"
+        
+          config.vm.synced_folder ".", "/vagrant", type: "nfs"
+          config.vm.synced_folder "./drupal", "/mnt/code/drupal", type: "rsync",
+            rsync__exclude: %w(.git sites/default/files)
+        end
+                        </code>
+                    </pre>
+                </div>
+            </div>
+        
+        
+        
+            <div class="row">
+                <div class="medium-offset-2 medium-8 columns">
+                    <h3>Marketing</h3>
+                    <p>Vestibulum placerat dui non erat ullamcorper, vitae bibendum turpis aliquam. Fusce dictum metus quis ante consequat vulputate. Maecenas vel commodo nulla. Fusce facilisis turpis at egestas rutrum. Fusce in urna non sapien vulputate egestas ultrices ut libero. Mauris ligula quam, euismod ac risus eget, ullamcorper porttitor nisl. Morbi tristique, ex sit amet sollicitudin luctus, massa lorem fermentum dolor, a consequat est nisi vitae lorem. Praesent malesuada sagittis nisl, vitae fringilla metus.</p>
+                    <p>Curabitur bibendum lectus metus. Etiam non ex nec augue sollicitudin porta. Praesent vestibulum tristique lectus, in porta dui commodo vel. Donec eu velit arcu. Duis ut ante eleifend massa euismod laoreet. Pellentesque vehicula sapien a vestibulum imperdiet. Maecenas ac quam nec sem ullamcorper fringilla ut a neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipit condimentum tempus. Aenean iaculis, est eget tempus vulputate, elit tellus auctor libero, sit amet mollis tellus odio et tortor. Curabitur quis nibh ut metus posuere euismod quis quis enim. Vivamus imperdiet dui a erat vulputate semper.</p>
+                </div>
+            </div>
+            <div class="row github">
+                <div class="small-12 medium-offset-2 medium-3 columns">
+                    <img src="../../assets/img/blog/Octocat.png" class="ocotocat"/>
+                </div>
+                <div class="small-12 medium-4 columns">
+                    <h3 class="github">Download this on GitHub</h3>
+                    <a href="https://github.com/username/projectname">https://github.com/username/projectname</a>
+                    <p>Vestibulum placerat dui non erat ullamcorper, vitae bibendum turpis aliquam. Fusce dictum metus quis ante consequat vulputate. Maecenas vel commodo nulla.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="medium-offset-2 medium-8 columns">
+                    <h3>Results</h3>
+                    <p>Integer ullamcorper lorem vel eros sagittis, sed cursus ante suscipit. Vestibulum scelerisque quis augue et pulvinar. Fusce a odio fermentum, consequat libero accumsan, rhoncus libero. Maecenas vel eros nec metus rhoncus eleifend. Donec ut urna eget ex gravida efficitur id eu dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus leo enim, semper ut orci id, vehicula efficitur velit. Nullam eget risus elementum, laoreet mi eget, finibus mauris. Duis luctus finibus ante ut porta. Aliquam erat volutpat.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="medium-offset-2 medium-8 columns">
+                        <div class="author-info author-info-Tom Friedhof row">
+                            <div class="large-3 columns">
+                                <img src="/assets/img/blog/tom-friedhof.jpg" />
+                            </div>
+                            <div class="large-9 columns">
+                                <h3>Tom Friedhof</h3>
+                                <h6>Senior Solutions Architect</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc semper elementum magna eu interdum. Vivamus vitae molestie urna, nec commodo magna. Nunc non sollicitudin neque. Ut nec gravida eros. Vestibulum imperdiet eleifend tempor. Etiam suscipit mauris non dignissim condimentum. Ut non erat imperdiet ex feugiat finibus.</p>
+                                <p>Sed accumsan arcu sed dui congue consequat. Duis eu ante at dolor vestibulum gravida. Nunc tincidunt eros vitae tristique vulputate. Nullam eu tristique urna. Duis vel dui sem.</p>
+                            </div>
+                        </div>
+                    <img src="../../assets/img/blog/disqus.png" />
+                    <h3 class="more-from-author">More Blog Posts by Author</h3>
+                    <ul class="more-from-author">
+                            <li><!-- Your content goes here -->
+                                <a href="/blog/encapsulation-inheritance-polymorphism"><img src="/assets/img/blog-listing/image-01.jpg"></a>
+                                <h4>Docker</h4>
+                                <h3>Drupal 8 Development in Docker - Redux</h3>
+                                <p>Morbi ex enim, rhoncus iaculis dignissim ac, laoreet in nisl. Ut rutrum lobortis est at malesuada. Curabitur sed risus lectus. Suspendisse in elementum orci.</p>
+                            </li>
+                            <li><!-- Your content goes here -->
+                                <a href="/blog/encapsulation-inheritance-polymorphism"><img src="/assets/img/blog-listing/image-02.jpg"></a>
+                                <h4>Drupal</h4>
+                                <h3>10 Things Every Jr. Drupal Web Developer Needs to Know</h3>
+                                <p>Morbi ex enim, rhoncus iaculis dignissim ac, laoreet in nisl. Ut rutrum lobortis est at malesuada. Curabitur sed risus lectus. Suspendisse in elementum orci.</p>
+                            </li>
+                            <li><!-- Your content goes here -->
+                                <a href="/blog/encapsulation-inheritance-polymorphism"><img src="/assets/img/blog-listing/image-03.jpg"></a>
+                                <h4>Drupal</h4>
+                                <h3>Writing custom fields in Drupal 8 - Part 2</h3>
+                                <p>Morbi ex enim, rhoncus iaculis dignissim ac, laoreet in nisl. Ut rutrum lobortis est at malesuada. Curabitur sed risus lectus. Suspendisse in elementum orci.</p>
+                            </li>
+                            <li><!-- Your content goes here -->
+                                <a href="/blog/encapsulation-inheritance-polymorphism"><img src="/assets/img/blog-listing/image-04.jpg"></a>
+                                <h4>Drupal</h4>
+                                <h3>Writing custom fields in Drupal 8 - Part 1</h3>
+                                <p>Morbi ex enim, rhoncus iaculis dignissim ac, laoreet in nisl. Ut rutrum lobortis est at malesuada. Curabitur sed risus lectus. Suspendisse in elementum orci.</p>
+                            </li>
+                    </ul>
+        
+                </div>
+            </div>
+        </section>
+        
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57ae5620ca7e69ec"></script>
+        
+
+        <footer>
+          <div class="row full-width align-justify">
+            <div class="large-3 columns logo-img">
+              <a href="/">
+                <img src="../../assets/img/activelamp-logo.svg" class="svg activelamp-logo no-wordmark" alt="ActiveLAMP" />
+              </a>
+              <p>
+                12180 Ridgecrest Rd #106<br />
+                Victorville, CA 92395<br />
+                310.943.0246
+              </p>
+            </div>
+            <div class="large-3 large-offset-3 column">
+              <ul>
+                <li>Menu Item</li>
+                <li>Menu Item</li>
+                <li>Menu Item</li>
+                <li>Menu Item</li>
+                <li>Menu Item</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row full-width">
+            <div class="large-12 column">
+              <p class="copyright">2016 ActiveLAMP, All rights reserved.</p>
+            </div>
+          </div>
+        </footer>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="search-form--background"></div>
+  <script src="../../assets/js/inlineSVG.min.js"></script>
+  <script src="../../assets/js/app.js"></script>
+  <script src="../../assets/js/prism.js"></script>
+  </body>
+</html>
