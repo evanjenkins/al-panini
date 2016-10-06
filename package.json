@@ -47,5 +47,8 @@
       "es2015"
     ]
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "gulp-clean": "^0.3.2"
+  }
 }

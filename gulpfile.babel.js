@@ -9,6 +9,7 @@ import rimraf   from 'rimraf';
 import sherpa   from 'style-sherpa';
 import yaml     from 'js-yaml';
 import fs       from 'fs';
+import clean    from 'gulp-clean';
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
@@ -37,6 +38,16 @@ gulp.task('default',
 function clean(done) {
   rimraf(PATHS.dist, done);
 }
+
+gulp.task('deploy', ['preDeploy'], function() {
+  return gulp.src(['src', 'dist'], { read: false })
+    .pipe(clean());
+});
+
+gulp.task('preDeploy', ['build'], function() {
+  return gulp.src('dist/**/*')
+    .pipe(gulp.dest(''));
+});
 
 // Copy files out of the assets folder
 // This task skips over the "img", "js", and "scss" folders, which are parsed separately
